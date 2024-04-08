@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-spring-test/static/css/main.e6c13ad2.css",
+    "main.js": "/react-spring-test/static/js/main.43b4aea0.js",
+    "static/js/453.1a220e83.chunk.js": "/react-spring-test/static/js/453.1a220e83.chunk.js",
+    "static/media/container-operation-port-series.jpg": "/react-spring-test/static/media/container-operation-port-series.2ddba70304a745432bde.jpg",
+    "static/media/container-truck5.jpg": "/react-spring-test/static/media/container-truck5.78969ac9a4310ff4c3fc.jpg",
+    "static/media/aerial-view-container-cargo-ship.jpg": "/react-spring-test/static/media/aerial-view-container-cargo-ship.56324020b3a8ae04a4bb.jpg",
+    "static/media/truck-vehicle-with-trailers-back.jpg": "/react-spring-test/static/media/truck-vehicle-with-trailers-back.d3d28e1d116c959ab720.jpg",
+    "static/media/industrial-port-container-yard_1.jpg": "/react-spring-test/static/media/industrial-port-container-yard_1.7a954d94ed4e25a431dd.jpg",
+    "static/media/medium-shot-man-holding-clipboar.jpg": "/react-spring-test/static/media/medium-shot-man-holding-clipboar.99e6462e6f8ea160209d.jpg",
+    "static/media/many-transport-trucks-parked-service-station-sunset-ai-generative5-min.jpg": "/react-spring-test/static/media/many-transport-trucks-parked-service-station-sunset-ai-generative5-min.6e4c650daad0a2fdbc5e.jpg",
+    "index.html": "/react-spring-test/index.html",
+    "main.e6c13ad2.css.map": "/react-spring-test/static/css/main.e6c13ad2.css.map",
+    "main.43b4aea0.js.map": "/react-spring-test/static/js/main.43b4aea0.js.map",
+    "453.1a220e83.chunk.js.map": "/react-spring-test/static/js/453.1a220e83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.43b4aea0.js"
+  ]
+}
