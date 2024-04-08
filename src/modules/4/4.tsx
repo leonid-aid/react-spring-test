@@ -31,7 +31,6 @@ const CountAnimation = ({ n }: { n: number }) => {
 export const Part4=()=>{
 
     const [ref1, inView1] = useInView({threshold:0.2})
-    const [ref2, inView2] = useInView({threshold:0.2})
 
     const animations= useSprings(2,[
       {
@@ -40,8 +39,8 @@ export const Part4=()=>{
         config: { tension: 20, friction: 5 }
       },
         {
-          opacity:inView2 ? 1:0,
-          transform:inView2 ? 'scale(1)':'scale(0)',
+          opacity:inView1 ? 1:0,
+          transform:inView1 ? 'scale(1)':'scale(0)',
           config:{tension:50,friction:10},
 
         }
@@ -50,23 +49,23 @@ export const Part4=()=>{
 
     return(
         <>
-        <S.BackGround>
-            <S.SignStateAnimated ref={ref1} style={animations[0]}> 
-            <animated.div ref={ref2} style={animations[1]}>
-                <Card icon={icon1} firstText=">" secondText="тыс." number={inView2 ? <CountAnimation n={500}/>:<>500</>} caption="Сотрудники"/>
+        <S.BackGround  ref={ref1}>
+            <S.SignStateAnimated style={animations[0]}> 
+            <animated.div style={animations[1]}>
+                <Card icon={icon1} firstText=">" secondText="тыс." number={inView1 ? <CountAnimation n={500}/>:<>500</>} caption="Сотрудники"/>
             </animated.div>
-            <animated.div ref={ref2} style={animations[1]}>
-                <Card icon={icon2} firstText="" secondText="+" number={inView2 ? <CountAnimation n={200}/>:<>200</>} caption="Обслуживаемые страны и территории"/>
+            <animated.div style={animations[1]}>
+                <Card icon={icon2} firstText="" secondText="+" number={inView1 ? <CountAnimation n={200}/>:<>200</>} caption="Обслуживаемые страны и территории"/>
                 </animated.div>
-                <animated.div ref={ref2} style={animations[1]}>
-                <Card icon={icon3} firstText="" secondText="М" number={inView2 ? <CountAnimation n={34} />:<>34</>} caption="Посылки доставляются ежедневно"/>
+                <animated.div style={animations[1]}>
+                <Card icon={icon3} firstText="" secondText="М" number={inView1 ? <CountAnimation n={34} />:<>34</>} caption="Посылки доставляются ежедневно"/>
                 </animated.div>
-                <animated.div ref={ref2} style={animations[1]}>
-                <Card icon={icon4} firstText="$" secondText="" number={inView2 ? <CountAnimation n={31} />:<>31</>} caption="Общий доход за 2022 год"/>
+                <animated.div style={animations[1]}>
+                <Card icon={icon4} firstText="$" secondText="" number={inView1 ? <CountAnimation n={31} />:<>31</>} caption="Общий доход за 2022 год"/>
                 </animated.div>
             </S.SignStateAnimated>
 
-            <animated.div ref={ref2} style={{...animations[1], marginTop:'-110px', marginRight:'-150px', zIndex:'1', paddingBottom:'50px'}}>
+            <animated.div style={{...animations[1], marginTop:'-110px', marginRight:'-150px', zIndex:'1', paddingBottom:'50px'}}>
             <Button label="Просмотреть все информационные биллютени"/>
             </animated.div>
         </S.BackGround>

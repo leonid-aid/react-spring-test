@@ -18,7 +18,7 @@ export const Part2=()=>{
     config: { tension: 20, friction: 5 }, */
 
 
-    const [ref1, inView1] = useInView({ threshold: 0.6 })
+    const [ref1, inView1] = useInView({ threshold: 0.5 })
     const [ref2, inView2] = useInView({ threshold: 0.1 })   
 
     const animations = useSprings(2, [
@@ -42,18 +42,18 @@ export const Part2=()=>{
         </S.BackGround1>
 
         <S.BackGround2>
-        <S.CardsWrap>
-            <S.AnimatedCard ref={ref2} style={animations[1]}>
+        <S.CardsWrap  ref={ref2}>
+            <S.AnimatedCard style={animations[1]}>
                 <img src={card1}></img>
                 <Ss.BigTitle>Наша стратегия</Ss.BigTitle>
                 <Ss.Text color="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. </Ss.Text>
             </S.AnimatedCard>
-            <S.AnimatedCard ref={ref2} style={animations[1]}>
+            <S.AnimatedCard style={animations[1]}>
             <img src={card2}></img>
                 <Ss.BigTitle>Лидерство</Ss.BigTitle>
                 <Ss.Text color="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. </Ss.Text>
             </S.AnimatedCard>
-            <S.AnimatedCard ref={ref2} style={animations[1]}>
+            <S.AnimatedCard style={animations[1]}>
             <img src={card3}></img>
                 <Ss.BigTitle>Инновации</Ss.BigTitle>
                 <Ss.Text color="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. </Ss.Text>
